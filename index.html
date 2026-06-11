@@ -937,7 +937,7 @@ function morphBack(){$('infB').classList.remove('sh');setTimeout(()=>{const f=$(
 
 // ═══ COUNTDOWN ═══
 function uCD(){
-  const bd=new Date('2026-07-15T00:00:00');// ← CHANGE TO HER BIRTHDAY
+  const bd = new Date('2026-06-12T00:00:00+05:45');
   const d=Math.abs(bd-new Date()),dy=~~(d/864e5),h=~~(d%864e5/36e5),m=~~(d%36e5/6e4),s=~~(d%6e4/1e3);
   $('cdR').innerHTML=`<div class="cdu"><div class="cdn">${dy}</div><div class="cdl">days</div></div><div class="cdu"><div class="cdn">${String(h).padStart(2,'0')}</div><div class="cdl">hrs</div></div><div class="cdu"><div class="cdn">${String(m).padStart(2,'0')}</div><div class="cdl">min</div></div><div class="cdu"><div class="cdn">${String(s).padStart(2,'0')}</div><div class="cdl">sec</div></div>`;
 }
